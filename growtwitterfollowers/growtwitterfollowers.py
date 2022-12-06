@@ -38,19 +38,10 @@ class MyStream(tweepy.StreamingClient):
 # Creating Stream object
 stream = MyStream(bearer_token=bearer_token)
 
-#Deleting terms to search rules
-# stream.delete_rules(ids = 1556327631053721601)
-# rules = stream.get_rules()
-# print(rules)
 
-# Adding rules - Eric
+# Adding rules
 stream.add_rules(tweepy.StreamRule("(bio:nft bio:crypto lang:en followers_count:100..1000) (-is:retweet -is:reply)"))
 
-# Adding rules - wwt
-# stream.add_rules(tweepy.StreamRule("(bio:web3 lang:en followers_count:100..1000) (-is:retweet -is:reply)"))
-
-# stream.add_rules(tweepy.StreamRule("(#Python OR #programming) (-is:retweet -is:reply)"))
-# print("completed add rules")
 
 # Starting stream
 stream.filter()
