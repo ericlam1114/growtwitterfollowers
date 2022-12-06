@@ -5,8 +5,8 @@ import random
 api_key = "<ADD IT HERE>"
 api_secret = "<ADD IT HERE>"
 bearer_token = "<ADD IT HERE>"
-access_token = "ADD IT HERE"
-access_token_secret = "ADD IT HERE"
+access_token = "<ADD IT HERE>"
+access_token_secret = "<ADD IT HERE>"
 
 
 # Gainaing access and connecting to Twitter API using Credentials
